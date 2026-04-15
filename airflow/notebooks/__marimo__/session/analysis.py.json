@@ -1,0 +1,119 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.1",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "2d7972ccf36e80c9bd84a3632f12c223",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "9d1247976e16e338b5da8ffb82be2112",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"pipeline-e-commerce-isi-dakar\">\ud83d\ude80 Pipeline E-Commerce - ISI Dakar</h1>\n<span class=\"paragraph\"><strong>Objectif :</strong> Ingestion Temps R\u00e9el (Kafka), Stockage Medallion (MinIO) et Analytics (Spark).</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "cc75b4a0368391d869de30b3f6616b68",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "de3bd2d0e825ed7ad612133923de0839",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"1-ingestion-temps-reel-producer\">1\ufe0f\u20e3 Ingestion Temps R\u00e9el (Producer)</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "5924d16f0f8d9469cf3428a3988c3498",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "8879c5247c1be1e554af4b4895541031",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2-traitement-medallion-avec-spark-batchmicro-batch\">2\ufe0f\u20e3 Traitement Medallion avec Spark (Batch/Micro-batch)</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "ee484e269d55cf045311f697f7c3ff3b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "%3|1776293110.179|FAIL|rdkafka#producer-1| [thrd:localhost:9092/1]: localhost:9092/1: Connect to ipv4#127.0.0.1:9092 failed: Connection refused (after 0ms in state CONNECT, 15 identical error(s) suppressed)\n%3|1776293140.584|FAIL|rdkafka#producer-1| [thrd:localhost:9092/1]: localhost:9092/1: Connect to ipv4#127.0.0.1:9092 failed: Connection refused (after 0ms in state CONNECT, 14 identical error(s) suppressed)\nSetting default log level to \"WARN\".\nTo adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).\n26/04/15 22:45:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable\n%3|1776293171.013|FAIL|rdkafka#producer-1| [thrd:localhost:9092/1]: localhost:9092/1: Connect to ipv4#127.0.0.1:9092 failed: Connection refused (after 0ms in state CONNECT, 15 identical error(s) suppressed)\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "7091fb3cfe83c9fa17d5948a563a9ad4",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "faaa82b2ca8fd9a9d41603c06f019d5d",
+      "outputs": [],
+      "console": []
+    }
+  ]
+}
