@@ -1,0 +1,8 @@
+pandas
+kafka-python
+psycopg2-binary
+minio
+marimo
+pyspark==3.5.0
+confluent-kafka
+faker
