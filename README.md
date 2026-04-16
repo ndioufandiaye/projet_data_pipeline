@@ -71,9 +71,6 @@ Accés marimo : http://localhost:7860
 Accés kafka : http://localhost:8081
 
 
-
-## Le DAG d'Exemple : first_dag
-
 Le DAG `ecommerce_medallion_etl.py` illustre un workflow simple en 2 étapes :
 
 ### Architecture du DAG
