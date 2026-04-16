@@ -11,9 +11,10 @@ x-airflow-common: &airflow-common
     - ./data:/opt/airflow/data
     # MODIFIE CETTE LIGNE CI-DESSOUS :
     - ./airflow/notebooks:/opt/airflow/notebooks
+    - ./consumers:/opt/airflow/consumers
   environment: &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: LocalExecutor
-    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://toto:toto1234@postgres/ecommerce_db
     AIRFLOW__CORE__LOAD_EXAMPLES: "false"
     AIRFLOW__WEBSERVER__WEB_SERVER_MASTER_TIMEOUT: "300"
     AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
@@ -30,13 +31,13 @@ services:
     container_name: airflow-postgres
     restart: unless-stopped
     environment:
-      POSTGRES_USER: airflow
-      POSTGRES_PASSWORD: airflow
-      POSTGRES_DB: airflow
+      POSTGRES_USER: toto
+      POSTGRES_PASSWORD: toto1234
+      POSTGRES_DB: ecommerce_db
     volumes:
       - postgres-db-volume:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U airflow -d airflow"]
+      test: ["CMD-SHELL", "pg_isready -U toto -d ecommerce_db"]
       interval: 10s
       timeout: 5s
       retries: 10
@@ -181,7 +182,7 @@ services:
     entrypoint: [] 
     # Et on lance marimo via bash
     command: >
-      bash -c "pip install marimo && marimo edit --host 0.0.0.0 --port 7860 --no-token --headless /opt/airflow/notebooks/analysis.py"
+      bash -c "pip install marimo && marimo edit --host 0.0.0.0 --port 7860 --no-token --headless /opt/airflow/"
     depends_on:
       airflow-init:
         condition: service_completed_successfully
