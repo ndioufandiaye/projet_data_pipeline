@@ -46,7 +46,7 @@
     },
     {
       "id": "bkHC",
-      "code_hash": "de3bd2d0e825ed7ad612133923de0839",
+      "code_hash": "4b37bf0220f9cc53eae17ca20c8cc9f8",
       "outputs": [
         {
           "type": "data",
@@ -59,7 +59,7 @@
     },
     {
       "id": "lEQa",
-      "code_hash": "5924d16f0f8d9469cf3428a3988c3498",
+      "code_hash": "6e40cd672e8b22d1ba28a40f77b3278d",
       "outputs": [
         {
           "type": "data",
@@ -72,7 +72,7 @@
     },
     {
       "id": "PKri",
-      "code_hash": "8879c5247c1be1e554af4b4895541031",
+      "code_hash": "ef9271b8e055dd54f72800a385c60302",
       "outputs": [
         {
           "type": "data",
@@ -85,7 +85,7 @@
     },
     {
       "id": "Xref",
-      "code_hash": "ee484e269d55cf045311f697f7c3ff3b",
+      "code_hash": "e38ddd920dfe05cac4ae3f1f1f67c876",
       "outputs": [
         {
           "type": "data",
@@ -98,21 +98,35 @@
         {
           "type": "stream",
           "name": "stderr",
-          "text": "%3|1776293110.179|FAIL|rdkafka#producer-1| [thrd:localhost:9092/1]: localhost:9092/1: Connect to ipv4#127.0.0.1:9092 failed: Connection refused (after 0ms in state CONNECT, 15 identical error(s) suppressed)\n%3|1776293140.584|FAIL|rdkafka#producer-1| [thrd:localhost:9092/1]: localhost:9092/1: Connect to ipv4#127.0.0.1:9092 failed: Connection refused (after 0ms in state CONNECT, 14 identical error(s) suppressed)\nSetting default log level to \"WARN\".\nTo adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).\n26/04/15 22:45:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable\n%3|1776293171.013|FAIL|rdkafka#producer-1| [thrd:localhost:9092/1]: localhost:9092/1: Connect to ipv4#127.0.0.1:9092 failed: Connection refused (after 0ms in state CONNECT, 15 identical error(s) suppressed)\n",
+          "text": "%3|1776337470.214|FAIL|rdkafka#producer-1| [thrd:localhost:9092/1]: localhost:9092/1: Connect to ipv4#127.0.0.1:9092 failed: Connection refused (after 0ms in state CONNECT)\n%3|1776337472.228|FAIL|rdkafka#producer-1| [thrd:localhost:9092/1]: localhost:9092/1: Connect to ipv4#127.0.0.1:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)\nSetting default log level to \"WARN\".\nTo adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).\n26/04/16 11:04:35 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable\n",
           "mimetype": "text/plain"
         }
       ]
     },
     {
       "id": "SFPL",
-      "code_hash": "7091fb3cfe83c9fa17d5948a563a9ad4",
-      "outputs": [],
+      "code_hash": "5227cfa8d9ccc722b92ae9c5d3994c83",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "BYtC",
-      "code_hash": "faaa82b2ca8fd9a9d41603c06f019d5d",
-      "outputs": [],
+      "code_hash": "85fdd58c81b37f880acde84f26b41858",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     }
   ]

@@ -1,0 +1,39 @@
+[2026-04-16T10:49:09.670+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecommerce_medallion_pipeline.compute_gold scheduled__2026-04-15T00:00:00+00:00 [queued]>
+[2026-04-16T10:49:09.717+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecommerce_medallion_pipeline.compute_gold scheduled__2026-04-15T00:00:00+00:00 [queued]>
+[2026-04-16T10:49:09.718+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2026-04-16T10:49:09.809+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): compute_gold> on 2026-04-15 00:00:00+00:00
+[2026-04-16T10:49:09.874+0000] {standard_task_runner.py:60} INFO - Started process 806 to run task
+[2026-04-16T10:49:09.894+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ecommerce_medallion_pipeline', 'compute_gold', 'scheduled__2026-04-15T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/ecommerce_medallion_etl.py', '--cfg-path', '/tmp/tmprhzh5p75']
+[2026-04-16T10:49:09.914+0000] {standard_task_runner.py:88} INFO - Job 4: Subtask compute_gold
+[2026-04-16T10:49:10.173+0000] {task_command.py:423} INFO - Running <TaskInstance: ecommerce_medallion_pipeline.compute_gold scheduled__2026-04-15T00:00:00+00:00 [running]> on host 7282e7e6d019
+[2026-04-16T10:49:10.550+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ecommerce_medallion_pipeline' AIRFLOW_CTX_TASK_ID='compute_gold' AIRFLOW_CTX_EXECUTION_DATE='2026-04-15T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-04-15T00:00:00+00:00'
+[2026-04-16T10:49:26.708+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/***/utils/context.py:315 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2026-04-16T10:50:02.552+0000] {logging_mixin.py:188} INFO - +------------------+------------------+-----------------+
+|           Country|      TotalRevenue|TotalTransactions|
++------------------+------------------+-----------------+
+|            Sweden|          38367.83|              450|
+|         Singapore|          15285.38|              218|
+|           Germany|227618.60999999987|             9015|
+|               RSA|1002.3100000000001|               58|
+|            France| 208820.0999999999|             8307|
+|            Greece|           4760.52|              145|
+|European Community|           1300.25|               60|
+|           Belgium|          41196.34|             2031|
+|           Finland|          22344.48|              681|
+|             Malta|           2725.59|              112|
+|       Unspecified|           2651.22|              239|
+|             Italy|          17483.24|              758|
+|              EIRE| 265245.9600000003|             7226|
+|         Lithuania|1661.0600000000002|               35|
+|            Norway|          35701.64|             1069|
+|             Spain| 61452.19999999997|             2464|
+|           Denmark|18914.090000000004|              379|
+|           Iceland|            4310.0|              182|
+|            Israel|           7215.84|              245|
+|   Channel Islands|20440.540000000005|              747|
++------------------+------------------+-----------------+
+only showing top 20 rows
+[2026-04-16T10:50:02.849+0000] {python.py:201} INFO - Done. Returned value was: None
+[2026-04-16T10:50:02.879+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=ecommerce_medallion_pipeline, task_id=compute_gold, execution_date=20260415T000000, start_date=20260416T104909, end_date=20260416T105002
+[2026-04-16T10:50:02.925+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-04-16T10:50:02.958+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
